@@ -23,7 +23,6 @@ from solana.rpc.commitment import Confirmed
 from solders.keypair import Keypair
 from solders.pubkey import Pubkey
 from solders.transaction import VersionedTransaction
-from solana.transaction import Transaction
 import base58
 
 
