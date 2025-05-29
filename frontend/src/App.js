@@ -152,7 +152,7 @@ function App() {
             <div className="flex gap-2">
               <button
                 onClick={botStatus?.is_running ? stopBot : startBot}
-                disabled={loading || !walletInfo?.configured}
+                disabled={loading || !walletInfo?.configured || (!botStatus?.is_running && !walletInfo?.configured)}
                 className={`flex-1 flex items-center justify-center gap-2 px-4 py-2 rounded-lg font-medium transition-all ${
                   botStatus?.is_running
                     ? 'bg-red-500/20 text-red-300 hover:bg-red-500/30 border border-red-500/30'
